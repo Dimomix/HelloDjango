@@ -15,49 +15,73 @@ from requests.exceptions import HTTPError
 from django.http import HttpResponse
 # Create your views here.
 class CertificationAnswerView(TemplateView):
-    template_name = "form-fileuploads.html"
-    
+    template_name = "form-answer.html"
+    # def get(self,request):
+    #     return render(request,self.template_name)
 
 class LoginView(TemplateView):
     template_name = "pages-login.html"
     def get(self,request):
         return render(request,self.template_name)
     def post(self,request):
-        username = request.POST['username']
+        email = request.POST['email']
         password = request.POST['password']
-        user = authenticate(request,username = username,password = password)
+        
+        user = authenticate(request,username = email,password = password)
+        print(1)
+        if user is None:
+            print(2)
+            try:
+                email_user = User.objects.filter(email=email).first()
+                print(email_user.username)
+                user = authenticate(request,username = email_user.username,password = password)
+                print(3)
+            except User.DoesNotExist:
+                return redirect('Login')
+                print(4)
         if user is not None:
             login(request,user)
-            return redirect('/Profile/')
+            return redirect('Profile')
         else:
-            return redirect('/login/')
+            return redirect('Login ')
 class RegisterView(TemplateView):
     template_name = "pages-register.html"
     def get(self,request):
         form = UserCreationForm()
-        return render(request,self.template_name,{'form':form})
+        return render(request,self.template_name
+                    #   ,
+                    #   {'form':form}
+                      )
     def post(self,request):
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            username = form.cleaned_data['username']
+        # form = UserCreationForm(request.POST)
+        # if form.is_valid():
+        #     form.save()
+        #     username = form.cleaned_data['username']
+        username = request.POST['login']
+        email = request.POST['email']
+        password = request.POST['password']
+        user = User.objects.create_user(username,email,password)
+        user.save()
+        return redirect('/Login/')
 class ProfileView(TemplateView):
-    template_name = "Profile.html"
-class Certification(TemplateView):
+    template_name = "pages-profile.html"
+class CertificationView(TemplateView):
     template_name = "Certification.html"
-class CertificationAnswer(TemplateView):
-    template_name = "CertificationAnswer.html"
-class CertificationLevel1(TemplateView):
-    template_name = "CertificationLevel.html"
-class CertificationResult(TemplateView):
+
+# class CertificationAnswerView(TemplateView):
+#     template_name = "CertificationAnswer.html"
+class CertificationLevelView(TemplateView):
+    template_name = "form-fileuploads.html"
+class CertificationResultView(TemplateView):
     template_name = "CertificationResult.html"
-class CertificationSession(TemplateView):
+class CertificationSessionView(TemplateView):
     template_name = "CertificationSession.html"
-class CertificationTask1(TemplateView):
+class CertificationTaskView(TemplateView):
+
     template_name = "CertificationTask.html"
-class Competency(TemplateView):
+class CompetencyView(TemplateView):
     template_name = "Competency.html"    
-class Subject(TemplateView):
+class SubjectView(TemplateView):
     template_name = "Subject.html"
 
 
