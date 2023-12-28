@@ -47,17 +47,58 @@ class Certification(TemplateView):
     template_name = "Certification.html"
 class CertificationAnswer(TemplateView):
     template_name = "CertificationAnswer.html"
-class CertificationLevel(TemplateView):
+class CertificationLevel1(TemplateView):
     template_name = "CertificationLevel.html"
 class CertificationResult(TemplateView):
     template_name = "CertificationResult.html"
 class CertificationSession(TemplateView):
     template_name = "CertificationSession.html"
-class CertificationTask(TemplateView):
+class CertificationTask1(TemplateView):
     template_name = "CertificationTask.html"
 class Competency(TemplateView):
     template_name = "Competency.html"    
 class Subject(TemplateView):
     template_name = "Subject.html"
+
+
+
+class AddQuetions(TemplateView):
+    
+    template_name = 'add_quetions.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        context["competency"] = Competency_o.objects.all()
+        context["level"] = CertificationLevel.objects.all()
+        context["category"] = Category.objects.all()
+
+
+        return context
+    
+    def post(self,request, *args, **kwargs):
+        subject = request.POST.get('subject')
+        category = request.POST.get('category')
+        for key in request.POST:
+            if key.startswith('question_'):
+                try:
+                    split = key.split('_')[1]
+                    quetion = request.POST.get(key)
+                    image = request.POST.get(f'image_{split}')
+                    level = request.POST.get(f'level_{split}')
+                    print(f'{image} {level} {quetion}')
+                    CertificationTask(
+                        content = quetion,
+                        image = image,
+                        сategory = Category.objects.get(name = category),
+                        competency = Competency_o.objects.get(name = subject),
+                        level = CertificationLevel.objects.get(level = level)
+                    ).save()
+
+                except Exception as e:
+                    print(e)
+        return redirect('add_quetions')
+
+            
+
 
     
