@@ -1,0 +1,727 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "django.shortcuts",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationAnswer",
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "isExtraImport": true,
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserChangeForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "SetPasswordForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPError",
+        "importPath": "requests.exceptions",
+        "description": "requests.exceptions",
+        "isExtraImport": true,
+        "detail": "requests.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "os,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.",
+        "description": "os.",
+        "detail": "os.",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Certification.migrations.0001_initial",
+        "description": "Certification.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CertificationAnswer',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('content', models.TextField()),",
+        "detail": "Certification.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationConfig",
+        "kind": 6,
+        "importPath": "Certification.apps",
+        "description": "Certification.apps",
+        "peekOfCode": "class CertificationConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'Certification'",
+        "detail": "Certification.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Teacher",
+        "kind": 6,
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "peekOfCode": "class Teacher(models.Model):\n    # Персональные данные учителя\n    first_name = models.CharField(max_length=100)\n    last_name = models.CharField(max_length=100)\n    # ...\nclass Competency(models.Model):\n    # Компетенции, например: Педагогические, Психологические и т.д.\n    name = models.CharField(max_length=100)\n    description = models.TextField()\nclass CertificationLevel(models.Model):",
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "Competency",
+        "kind": 6,
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "peekOfCode": "class Competency(models.Model):\n    # Компетенции, например: Педагогические, Психологические и т.д.\n    name = models.CharField(max_length=100)\n    description = models.TextField()\nclass CertificationLevel(models.Model):\n    # Уровни сертификации, например: 5, 6, 7, 8\n    level = models.IntegerField()\n    requirements = models.TextField()\nclass Subject(models.Model):\n    # Предметы, например: Математика, Информатика и т.д.",
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationLevel",
+        "kind": 6,
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "peekOfCode": "class CertificationLevel(models.Model):\n    # Уровни сертификации, например: 5, 6, 7, 8\n    level = models.IntegerField()\n    requirements = models.TextField()\nclass Subject(models.Model):\n    # Предметы, например: Математика, Информатика и т.д.\n    name = models.CharField(max_length=100)\n    description = models.TextField()\nclass CertificationTask(models.Model):\n    # Задачи для сертификации",
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "Subject",
+        "kind": 6,
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "peekOfCode": "class Subject(models.Model):\n    # Предметы, например: Математика, Информатика и т.д.\n    name = models.CharField(max_length=100)\n    description = models.TextField()\nclass CertificationTask(models.Model):\n    # Задачи для сертификации\n    title = models.CharField(max_length=100)\n    content = models.TextField()\n    competency = models.ForeignKey(Competency, related_name='tasks', on_delete=models.CASCADE)\n    image=models.ImageField(upload_to='certification_tasks', blank=True)",
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationTask",
+        "kind": 6,
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "peekOfCode": "class CertificationTask(models.Model):\n    # Задачи для сертификации\n    title = models.CharField(max_length=100)\n    content = models.TextField()\n    competency = models.ForeignKey(Competency, related_name='tasks', on_delete=models.CASCADE)\n    image=models.ImageField(upload_to='certification_tasks', blank=True)\n    level = models.ForeignKey(CertificationLevel, related_name='tasks', on_delete=models.CASCADE)\nclass CertificationAnswer(models.Model):\n    task = models.ForeignKey(CertificationTask, related_name='answers', on_delete=models.CASCADE)\n    result = models.ForeignKey('CertificationResult', related_name='answers', on_delete=models.CASCADE)",
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationAnswer",
+        "kind": 6,
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "peekOfCode": "class CertificationAnswer(models.Model):\n    task = models.ForeignKey(CertificationTask, related_name='answers', on_delete=models.CASCADE)\n    result = models.ForeignKey('CertificationResult', related_name='answers', on_delete=models.CASCADE)\n    content = models.TextField()\n    correct = models.BooleanField()\n    ball = models.IntegerField()\nclass CertificationAnswerFile(models.Model):\n    answer = models.ForeignKey(CertificationAnswer, related_name='files', on_delete=models.CASCADE)\n    file = models.FileField(upload_to='certification_answers')\nclass CertificationResult(models.Model):",
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationAnswerFile",
+        "kind": 6,
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "peekOfCode": "class CertificationAnswerFile(models.Model):\n    answer = models.ForeignKey(CertificationAnswer, related_name='files', on_delete=models.CASCADE)\n    file = models.FileField(upload_to='certification_answers')\nclass CertificationResult(models.Model):\n    # Результаты сертификации\n    teacher = models.ForeignKey(Teacher, related_name='certification_results', on_delete=models.CASCADE)\n    task = models.ForeignKey(CertificationTask, related_name='results', on_delete=models.CASCADE)\n    score = models.IntegerField()\n    passed = models.BooleanField()",
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationResult",
+        "kind": 6,
+        "importPath": "Certification.models",
+        "description": "Certification.models",
+        "peekOfCode": "class CertificationResult(models.Model):\n    # Результаты сертификации\n    teacher = models.ForeignKey(Teacher, related_name='certification_results', on_delete=models.CASCADE)\n    task = models.ForeignKey(CertificationTask, related_name='results', on_delete=models.CASCADE)\n    score = models.IntegerField()\n    passed = models.BooleanField()",
+        "detail": "Certification.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "Certification.urls",
+        "description": "Certification.urls",
+        "peekOfCode": "urlpatterns = [\n    path('Answerpage/',CertificationAnswerView.as_view(),name = 'Answerpage'),\n    path('Login/',LoginView.as_view(),name = 'Login'),\n    path('Register/',RegisterView.as_view(),name = 'Register'),\n    path('Profile/',ProfileView.as_view(),name = 'Profile'),\n    path('Certification/',Certification.as_view(),name = 'Certification'),\n    path('CertificationAnswer/',CertificationAnswer.as_view(),name = 'CertificationAnswer'),\n    path('CertificationLevel/',CertificationLevel.as_view(),name = 'CertificationLevel'),\n    path('CertificationResult/',CertificationResult.as_view(),name = 'CertificationResult'),\n    path('CertificationSession/',CertificationSession.as_view(),name = 'CertificationSession'),",
+        "detail": "Certification.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationAnswerView",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class CertificationAnswerView(TemplateView):\n    template_name = \"form-fileuploads.html\"\nclass LoginView(TemplateView):\n    template_name = \"pages-login.html\"\n    def get(self,request):\n        return render(request,self.template_name)\n    def post(self,request):\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request,username = username,password = password)",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "LoginView",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class LoginView(TemplateView):\n    template_name = \"pages-login.html\"\n    def get(self,request):\n        return render(request,self.template_name)\n    def post(self,request):\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request,username = username,password = password)\n        if user is not None:\n            login(request,user)",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterView",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class RegisterView(TemplateView):\n    template_name = \"pages-register.html\"\n    def get(self,request):\n        form = UserCreationForm()\n        return render(request,self.template_name,{'form':form})\n    def post(self,request):\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            username = form.cleaned_data['username']",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProfileView",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class ProfileView(TemplateView):\n    template_name = \"Profile.html\"\nclass Certification(TemplateView):\n    template_name = \"Certification.html\"\nclass CertificationAnswer(TemplateView):\n    template_name = \"CertificationAnswer.html\"\nclass CertificationLevel(TemplateView):\n    template_name = \"CertificationLevel.html\"\nclass CertificationResult(TemplateView):\n    template_name = \"CertificationResult.html\"",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "Certification",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class Certification(TemplateView):\n    template_name = \"Certification.html\"\nclass CertificationAnswer(TemplateView):\n    template_name = \"CertificationAnswer.html\"\nclass CertificationLevel(TemplateView):\n    template_name = \"CertificationLevel.html\"\nclass CertificationResult(TemplateView):\n    template_name = \"CertificationResult.html\"\nclass CertificationSession(TemplateView):\n    template_name = \"CertificationSession.html\"",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationAnswer",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class CertificationAnswer(TemplateView):\n    template_name = \"CertificationAnswer.html\"\nclass CertificationLevel(TemplateView):\n    template_name = \"CertificationLevel.html\"\nclass CertificationResult(TemplateView):\n    template_name = \"CertificationResult.html\"\nclass CertificationSession(TemplateView):\n    template_name = \"CertificationSession.html\"\nclass CertificationTask(TemplateView):\n    template_name = \"CertificationTask.html\"",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationLevel",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class CertificationLevel(TemplateView):\n    template_name = \"CertificationLevel.html\"\nclass CertificationResult(TemplateView):\n    template_name = \"CertificationResult.html\"\nclass CertificationSession(TemplateView):\n    template_name = \"CertificationSession.html\"\nclass CertificationTask(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass Competency(TemplateView):\n    template_name = \"Competency.html\"    ",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationResult",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class CertificationResult(TemplateView):\n    template_name = \"CertificationResult.html\"\nclass CertificationSession(TemplateView):\n    template_name = \"CertificationSession.html\"\nclass CertificationTask(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass Competency(TemplateView):\n    template_name = \"Competency.html\"    \nclass Subject(TemplateView):\n    template_name = \"Subject.html\"",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationSession",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class CertificationSession(TemplateView):\n    template_name = \"CertificationSession.html\"\nclass CertificationTask(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass Competency(TemplateView):\n    template_name = \"Competency.html\"    \nclass Subject(TemplateView):\n    template_name = \"Subject.html\"",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "CertificationTask",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class CertificationTask(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass Competency(TemplateView):\n    template_name = \"Competency.html\"    \nclass Subject(TemplateView):\n    template_name = \"Subject.html\"",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "Competency",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class Competency(TemplateView):\n    template_name = \"Competency.html\"    \nclass Subject(TemplateView):\n    template_name = \"Subject.html\"",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "Subject",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class Subject(TemplateView):\n    template_name = \"Subject.html\"",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "HelloDjango.asgi",
+        "description": "HelloDjango.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "HelloDjango.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "site_user_root_dir",
+        "kind": 5,
+        "importPath": "HelloDjango.passenger_wsgi",
+        "description": "HelloDjango.passenger_wsgi",
+        "peekOfCode": "site_user_root_dir = '/home/d/dimicowi/dimicowi.beget.tech/public_html'\nsys.path.insert(0, site_user_root_dir + '/HelloDjango')\nsys.path.insert(1, site_user_root_dir + '/venv/lib/python3.11/site-packages')\nos.environ['DJANGO_SETTINGS_MODULE'] = 'HelloDjango.settings'\nfrom django.core.wsgi import get_wsgi_application\napplication = get_wsgi_application()",
+        "detail": "HelloDjango.passenger_wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ['DJANGO_SETTINGS_MODULE']",
+        "kind": 5,
+        "importPath": "HelloDjango.passenger_wsgi",
+        "description": "HelloDjango.passenger_wsgi",
+        "peekOfCode": "os.environ['DJANGO_SETTINGS_MODULE'] = 'HelloDjango.settings'\nfrom django.core.wsgi import get_wsgi_application\napplication = get_wsgi_application()",
+        "detail": "HelloDjango.passenger_wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "HelloDjango.passenger_wsgi",
+        "description": "HelloDjango.passenger_wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "HelloDjango.passenger_wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-3(dg$2z2)@a3-8tx9#%#i#93j+*@(nr)-p(q3%$*9tp8gk3m!('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-3(dg$2z2)@a3-8tx9#%#i#93j+*@(nr)-p(q3%$*9tp8gk3m!('\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'Certification'",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'Certification'\n]\nMIDDLEWARE = [",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'HelloDjango.urls'",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "ROOT_URLCONF = 'HelloDjango.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR / 'templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'HelloDjango.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = '/home/d/dimicowi/dimicowi.beget.tech/public_html/static'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = '/home/d/dimicowi/dimicowi.beget.tech/public_html/static'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = '/home/d/dimicowi/dimicowi.beget.tech/public_html/static'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATIC_ROOT = '/home/d/dimicowi/dimicowi.beget.tech/public_html/static'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATIC_ROOT = '/home/d/dimicowi/dimicowi.beget.tech/public_html/static'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "STATIC_ROOT = '/home/d/dimicowi/dimicowi.beget.tech/public_html/static'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "HelloDjango.settings",
+        "description": "HelloDjango.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "HelloDjango.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "HelloDjango.urls",
+        "description": "HelloDjango.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('',include('Certification.urls')),\n    ]",
+        "detail": "HelloDjango.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "HelloDjango.wsgi",
+        "description": "HelloDjango.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "HelloDjango.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'HelloDjango.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]
