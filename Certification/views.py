@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect,reverse
 from django.views.generic import TemplateView
-from Certification.models import CertificationAnswer
+from Certification.models import CertificationAnswer, Teacher
 
 
 import django.shortcuts
@@ -15,10 +15,43 @@ from requests.exceptions import HTTPError
 from django.http import HttpResponse
 # Create your views here.
 class CertificationAnswerView(TemplateView):
-    template_name = "form-answer.html"
-    # def get(self,request):
-    #     return render(request,self.template_name)
-
+    # template_name = "form-answer.html"
+    template_name ="form-fileuploads.html"
+    def get(self,request):
+        user=request.user
+        teacher = Teacher.objects.filter(user=user).first()
+        session=CertificationSession.objects.filter(teacher=teacher,passed=False).first()
+        answer=session.answer.first()
+        context={
+            'answer':answer,
+            'session':session
+        }
+        return render(request,self.template_name,context)
+def answer_detail(request, pk):
+    if request.method == 'POST':
+        answer = CertificationAnswer.objects.get(pk=pk)
+        # answer.content=request.POST['answer']
+        content = request.POST.get('content')
+        files = request.FILES.get('file')
+        answer.content=content
+        answer.save()
+        print(content)
+        print(files)
+        if files:
+            file=CertificationAnswerFile.objects.create(file=files)
+            file.save()
+            
+        return redirect('CertificationAnswer')
+    answer = CertificationAnswer.objects.get(pk=pk)
+    user=request.user
+    teacher = Teacher.objects.filter(user=user).first()
+    session=CertificationSession.objects.filter(teacher=teacher,passed=False).first()
+    context={
+        'answer':answer,
+        'session':session
+    }
+    # Дополнительная логика, если нужно
+    return render(request, "form-fileuploads.html", context)
 class LoginView(TemplateView):
     template_name = "pages-login.html"
     def get(self,request):
@@ -61,8 +94,9 @@ class RegisterView(TemplateView):
         email = request.POST['email']
         password = request.POST['password']
         user = User.objects.create_user(username,email,password)
+        teacher = Teacher.objects.create(user=user)
         user.save()
-        return redirect('/Login/')
+        return redirect('Login')
 class ProfileView(TemplateView):
     template_name = "pages-profile.html"
 class CertificationView(TemplateView):

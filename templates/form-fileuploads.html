@@ -723,32 +723,70 @@
                             </div>
                         </div>
                         <!-- end page title -->
-
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="bordered-table-preview" role="tabpanel">
+                                <div class="table-responsive-sm">
+                                    <table class="table table-bordered table-centered mb-0">
+                                        <thead>
+                                            <tr>
+                                                {% for answer in session.answer.all %}
+                                                    <th>
+                                                        <a href="{% url 'answer_detail' answer.pk %}">{{ answer.pk }}</a>
+                                                    </th>
+                                                {% endfor %}
+                                                <!-- <th>1</th>
+                                                <th>2</th>
+                                                <th>3</th>
+                                                <th>4</th>
+                                                <th>5</th>
+                                                <th>6</th>
+                                                <th>7</th>
+                                                <th>8</th>
+                                                <th>9</th>
+                                                <th>10</th> -->
+                                                <th  style="color: red;text-align: right;"><i >Завершить</i></th>
+                                            </tr>
+                                        </thead>
+                                        
+                                    </table>
+                                </div> <!-- end table-responsive-->                     
+                            </div> <!-- end preview-->
+                        
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="header-title">Dropzone File Upload</h4>
-                                        <p class="text-muted font-14">
-                                            DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.
-                                        </p>
-
-                                        <ul class="nav nav-tabs nav-bordered mb-3">
-                                            <li class="nav-item">
-                                                <a href="#file-upload-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                    Preview
-                                                </a>
-                                            </li>
-                                            <!-- <li class="nav-item">
-                                                <a href="#file-upload-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                    Code
-                                                </a>
-                                            </li> -->
-                                        </ul> <!-- end nav-->
+                                        <!-- end nav-->
+                                        <div class="tab-pane" id="profile-tab-3">
+                                            <div class="row">
+                                        <div class="  center align-items-center">
+                                            <h2 class="" >{{answer.task.title|default:""}}</h2>
+                                            <div class="">
+                                                <h4 >
+                                                    {{answer.task.content}}
+                                                </h4>
+                                                </div>
+                                                {%if answer.task.image %}
+                                                <img src="{{answer.task.image.url}}" class="align-items-center" style="max-height: 500;" alt="">
+                                                {%endif%}
+                                            <!-- <img src="" class="align-items-center" width="200" height="200" alt=""> -->
+                                        </div>
+                                        <div class="tab-pane" id="profile-tab-3">
+                                            <form action="{% url 'answer_detail' answer.pk %}" enctype="multipart/form-data" method="post"  id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews"
+                                            data-upload-preview-template="#uploadPreviewTemplate">
+                                            {% csrf_token %}
+                                            <div class="row">
+                                        <div class=" mb-3">
+                                            <label class="col-md-3 col-form-label" for="email1">Ответ</label>
+                                            <div class="">
+                                                <textarea id="simplemde"  name="content" required style="width: 100%;height: 100%;"></textarea>
+                                            </div>
+                                        </div>
                                         <div class="tab-content">
                                             <div class="tab-pane show active" id="file-upload-preview">
-                                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews"
-                                                    data-upload-preview-template="#uploadPreviewTemplate">
+                                                <!-- <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews"
+                                                    data-upload-preview-template="#uploadPreviewTemplate"> -->
                                                     <div class="fallback">
                                                         <input name="file" type="file" multiple />
                                                     </div>
@@ -759,7 +797,7 @@
                                                         <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
                                                             <strong>not</strong> actually uploaded.)</span>
                                                     </div>
-                                                </form>
+                                                <!-- </form> -->
 
                                                 <!-- Preview -->
                                                 <div class="dropzone-previews mt-3" id="file-previews"></div>                                         
@@ -819,8 +857,21 @@
                                                 </pre>
                                             </div>  -->
                                             <!-- end preview code-->
+                                        
                                         </div> <!-- end tab-content-->
-
+   
+                                    </div>
+                                    <ul class="pager wizard mb-0 list-inline">
+                                        
+                                        <!-- <li class="previous list-inline-item">
+                                            <button type="button" class="btn btn-light"><i class="mdi mdi-arrow-left me-1"></i> Back to Account</button>
+                                        </li> -->
+                                        <li class="next  float-end" style="padding: 5%;">
+                                            <button type="submit" class="btn btn-info">Следуйщии<i class="mdi mdi-arrow-right ms-1"></i></button>
+                                        </li>
+                                    </ul>
+                                </form>
+                                        </div>
                                         
                                     </div>
                                     <!-- end card-body -->
