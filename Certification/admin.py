@@ -11,4 +11,4 @@ admin.site.register(CertificationTask)
 admin.site.register(CertificationAnswer)
 admin.site.register(CertificationSession)
 admin.site.register(CertificationAnswerFile)
-admin.site.register(CertificationResult)
+

@@ -16,5 +16,7 @@ urlpatterns = [
     path('Competency/',CompetencyView.as_view(),name = 'Competency'),
     path('Subject/',SubjectView.as_view(),name = 'Subject'),
     # path('Profile/',Profile.as_view(),name = 'Profile'),
-    
+    path('AddQuetions/', AddQuetions.as_view(),name  = 'add_quetions'),
+    path('api/certification-tasks/', certification_task_list, name='certification_task_list'),
+    path('delete-question/<int:question_id>/', delete_question, name='delete_question'),
 ]
