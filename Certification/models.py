@@ -7,7 +7,7 @@ class Competency(models.Model):
     name = models.CharField(max_length=100)
     # type = models.CharField(max_length=100)
     description = models.TextField(blank=True,null=True)
-    def __str__(self):
+    def _str_(self):
         return self.name
 class CertificationLevel(models.Model):
     # Уровни сертификации, например: 5, 6, 7, 8
@@ -19,7 +19,8 @@ class Category(models.Model):
     # Бакалавр Магистр и т.д.
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True,null=True)
-    def __str__(self):
+    level = models.ForeignKey(CertificationLevel, related_name='certification_sessions', on_delete=models.CASCADE, null = True)
+    def _str_(self):
         return self.name
 class Teacher(models.Model):
     # Преподаватели
@@ -54,14 +55,15 @@ class CertificationSession(models.Model):
     # Сессии сертификации
     teacher = models.ForeignKey(Teacher, related_name='certification_sessions', on_delete=models.CASCADE)
     competency=models.ForeignKey(Competency, related_name='certification_sessions', on_delete=models.CASCADE)
-    level = models.ForeignKey(CertificationLevel, related_name='certification_sessions', on_delete=models.CASCADE)
+    category=models.ForeignKey(Category, related_name='certification_sessions', on_delete=models.CASCADE, null =True)
     date = models.DateField(default=timezone.now)
     end_time=models.DateTimeField(null=True,blank=True)
-    task=models.ManyToManyField(CertificationTask, related_name='certification_sessions')
-    answer = models.ManyToManyField(CertificationAnswer, related_name='certification_sessions')
+
+    task=models.ManyToManyField(CertificationTask, related_name='certification_sessions',null=True)
+    answer = models.ManyToManyField(CertificationAnswer, related_name='certification_sessions',null=True)
     score = models.IntegerField(null=True,blank=True)
     passed = models.BooleanField(null=True,blank=True, default=False) 
-    def __str__(self):
+    def _str_(self):
         return self.teacher.user.username
 class CertificationAnswerFile(models.Model):
     answer = models.ForeignKey(CertificationAnswer, related_name='files', on_delete=models.CASCADE)

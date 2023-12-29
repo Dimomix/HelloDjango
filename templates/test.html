@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Choice Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      background-color: aliceblue;
+    }
+    form{
+      margin-top:20px;
+    }
+    .quiz-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .question {
+      width:45%;
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding:20px;
+    }
+    .question:nth-child(odd){
+      margin-right:5%;
+    }
+    .question p{
+      font-weight: bold;
+    }
+    
+    .answers {
+      margin-bottom: 20px;
+    }
+    .answers label:not(:first-child){
+      border-top:1px solid #e0e0e0;
+    }
+    
+    label {
+      padding:10px 0;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    
+    .submit-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .result {
+      font-weight: bold;
+      font-size: 22px;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .d-flex{
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Multiple Choice Quiz</h1>
+    <hr>
+    <form id="quiz-form">
+      <div class="d-flex">
+        <div class="question">
+          <p>1. What is the capital of France?</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q1" value="a">
+              Paris
+            </label>
+            <label>
+              <input type="radio" name="q1" value="b">
+              Madrid
+            </label>
+            <label>
+              <input type="radio" name="q1" value="c">
+              London
+            </label>
+            <label>
+              <input type="radio" name="q1" value="d">
+              Rome
+            </label>
+          </div>
+        </div>
+        
+        <div class="question">
+          <p>2. What is the largest planet in our solar system?</p>
+          <div class="answers">
+            <label>
+              <input type="radio" name="q2" value="a">
+              Venus
+            </label>
+            <label>
+              <input type="radio" name="q2" value="b">
+              Mars
+            </label>
+            <label>
+              <input type="radio" name="q2" value="c">
+              Jupiter
+            </label>
+            <label>
+              <input type="radio" name="q2" value="d">
+              Saturn
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    
+    <div class="result" id="result"></div>
+  </div>
+  
+  <script>
+    const quizForm = document.getElementById('quiz-form');
+    const resultDiv = document.getElementById('result');
+    const correctAnswers = ['a', 'c'];
+    
+    quizForm.addEventListener('submit', e => {
+      e.preventDefault();
+      
+      let score = 0;
+      const userAnswers = [quizForm.q1.value,quizForm.q2.value];
+      userAnswers.forEach((answer, index) => {
+        if (answer === correctAnswers[index]) {
+          score += 1;
+        }
+      });
+    
+      resultDiv.innerHTML = `Your score is ${score}/${correctAnswers.length}`;
+    });
+</script>
