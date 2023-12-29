@@ -41,10 +41,10 @@ def answer_detail(request, pk):
         print(content)
         print(files)
         if files:
-            file=CertificationAnswerFile.objects.create(file=files)
+            file=CertificationAnswerFile.objects.create(answer=answer,file=files)
             file.save()
             
-        return redirect('CertificationAnswer')
+        # return redirect('CertificationAnswer')
     answer = CertificationAnswer.objects.get(pk=pk)
     user=request.user
     teacher = Teacher.objects.filter(user=user).first()
@@ -55,6 +55,28 @@ def answer_detail(request, pk):
     }
     # Дополнительная логика, если нужно
     return render(request, "form-fileuploads.html", context)
+def passed_session(request, pk):
+    if request.method == 'POST':
+        answer = CertificationAnswer.objects.get(pk=pk)
+        # answer.content=request.POST['answer']
+        content = request.POST.get('content')
+        files = request.FILES.get('file')
+        answer.content=content
+        answer.save()
+        print(content)
+        print(files)
+        if files:
+            file=CertificationAnswerFile.objects.create(answer=answer,file=files)
+            file.save()
+            
+    user=request.user
+    teacher = Teacher.objects.filter(user=user).first()
+    session=CertificationSession.objects.filter(teacher=teacher,passed=False).first()
+    if session:
+        session.passed=True
+        session.save()
+    # Дополнительная логика, если нужно
+    return redirect('CertificationSession')
 class LoginView(TemplateView):
     template_name = "pages-login.html"
     def get(self,request):
@@ -64,22 +86,22 @@ class LoginView(TemplateView):
         password = request.POST['password']
         
         user = authenticate(request,username = email,password = password)
-        print(1)
         if user is None:
-            print(2)
             try:
                 email_user = User.objects.filter(email=email).first()
-                print(email_user.username)
-                user = authenticate(request,username = email_user.username,password = password)
-                print(3)
+                if email_user :
+                    user = authenticate(request,username = email_user.username,password = password)
             except User.DoesNotExist:
                 return redirect('Login')
-                print(4)
         if user is not None:
             login(request,user)
-            return redirect('Profile')
+            return redirect('CertificationSession')
         else:
-            return redirect('Login ')
+            return redirect('Login')
+class LogoutView(TemplateView):
+    def get(self,request):
+        logout(request)
+        return redirect('Login')
 class RegisterView(TemplateView):
     template_name = "pages-register.html"
     def get(self,request):
@@ -140,6 +162,7 @@ class CertificationSessionView(TemplateView):
             category = Category.objects.get(name = category),
             end_time = datetime.now() + timedelta(hours=1),
         )
+        session.save()
         random_tasks = get_random_tasks(Category.objects.get(name = category).level)  # Используем функцию, описанную ранее
         for task in random_tasks:
             session.task.add(task)
@@ -147,7 +170,7 @@ class CertificationSessionView(TemplateView):
             session.answer.add(ans)
 
         session.save()
-        return redirect('CertificationSession')
+        return redirect('Answerpage')
 
 
 class CertificationTaskView(TemplateView):

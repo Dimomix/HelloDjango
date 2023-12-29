@@ -32,86 +32,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -299,6 +219,22 @@
         "documentation": {}
     },
     {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
         "label": "UserCreationForm",
         "importPath": "django.contrib.auth.forms",
         "description": "django.contrib.auth.forms",
@@ -355,11 +291,36 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "serializers",
+        "importPath": "django.core",
+        "description": "django.core",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "django.core",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
         "documentation": {}
     },
     {
@@ -439,51 +400,6 @@
         "documentation": {}
     },
     {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "Certification.migrations.0002_alter_category_description_and_more",
-        "description": "Certification.migrations.0002_alter_category_description_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('Certification', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='category',\n            name='description',\n            field=models.TextField(null=True),\n        ),",
-        "detail": "Certification.migrations.0002_alter_category_description_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "Certification.migrations.0003_certificationsession_end_time_and_more",
-        "description": "Certification.migrations.0003_certificationsession_end_time_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('Certification', '0002_alter_category_description_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='certificationsession',\n            name='end_time',\n            field=models.DateTimeField(blank=True, null=True),\n        ),",
-        "detail": "Certification.migrations.0003_certificationsession_end_time_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "Certification.migrations.0004_alter_teacher_competencies",
-        "description": "Certification.migrations.0004_alter_teacher_competencies",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('Certification', '0003_certificationsession_end_time_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='teacher',\n            name='competencies',\n            field=models.ManyToManyField(blank=True, null=True, related_name='teachers', to='Certification.competency'),\n        ),",
-        "detail": "Certification.migrations.0004_alter_teacher_competencies",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "Certification.migrations.0005_alter_category_description_and_more",
-        "description": "Certification.migrations.0005_alter_category_description_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('Certification', '0004_alter_teacher_competencies'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='category',\n            name='description',\n            field=models.TextField(blank=True, null=True),\n        ),",
-        "detail": "Certification.migrations.0005_alter_category_description_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "Certification.migrations.0006_alter_certificationanswer_ball_and_more",
-        "description": "Certification.migrations.0006_alter_certificationanswer_ball_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('Certification', '0005_alter_category_description_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='certificationanswer',\n            name='ball',\n            field=models.IntegerField(blank=True, null=True),\n        ),",
-        "detail": "Certification.migrations.0006_alter_certificationanswer_ball_and_more",
-        "documentation": {}
-    },
-    {
         "label": "CertificationConfig",
         "kind": 6,
         "importPath": "Certification.apps",
@@ -515,7 +431,7 @@
         "kind": 6,
         "importPath": "Certification.models",
         "description": "Certification.models",
-        "peekOfCode": "class Category(models.Model):\n    # Бакалавр Магистр и т.д.\n    name = models.CharField(max_length=100)\n    description = models.TextField(blank=True,null=True)\n    def __str__(self):\n        return self.name\nclass Teacher(models.Model):\n    # Преподаватели\n    user = models.OneToOneField(User, related_name='teacher', on_delete=models.CASCADE,null=True)\n    # subjects = models.ManyToManyField(Subject, related_name='teachers')",
+        "peekOfCode": "class Category(models.Model):\n    # Бакалавр Магистр и т.д.\n    name = models.CharField(max_length=100)\n    description = models.TextField(blank=True,null=True)\n    level = models.ForeignKey(CertificationLevel, related_name='certification_sessions', on_delete=models.CASCADE, null = True)\n    def __str__(self):\n        return self.name\nclass Teacher(models.Model):\n    # Преподаватели\n    user = models.OneToOneField(User, related_name='teacher', on_delete=models.CASCADE,null=True)",
         "detail": "Certification.models",
         "documentation": {}
     },
@@ -551,7 +467,7 @@
         "kind": 6,
         "importPath": "Certification.models",
         "description": "Certification.models",
-        "peekOfCode": "class CertificationSession(models.Model):\n    # Сессии сертификации\n    teacher = models.ForeignKey(Teacher, related_name='certification_sessions', on_delete=models.CASCADE)\n    competency=models.ForeignKey(Competency, related_name='certification_sessions', on_delete=models.CASCADE)\n    level = models.ForeignKey(CertificationLevel, related_name='certification_sessions', on_delete=models.CASCADE)\n    date = models.DateField(default=timezone.now)\n    end_time=models.DateTimeField(null=True,blank=True)\n    task=models.ManyToManyField(CertificationTask, related_name='certification_sessions')\n    answer = models.ManyToManyField(CertificationAnswer, related_name='certification_sessions')\n    score = models.IntegerField(null=True,blank=True)",
+        "peekOfCode": "class CertificationSession(models.Model):\n    # Сессии сертификации\n    teacher = models.ForeignKey(Teacher, related_name='certification_sessions', on_delete=models.CASCADE)\n    competency=models.ForeignKey(Competency, related_name='certification_sessions', on_delete=models.CASCADE)\n    category=models.ForeignKey(Category, related_name='certification_sessions', on_delete=models.CASCADE, null =True)\n    date = models.DateField(default=timezone.now)\n    end_time=models.DateTimeField(null=True,blank=True)\n    task=models.ManyToManyField(CertificationTask, related_name='certification_sessions',null=True)\n    answer = models.ManyToManyField(CertificationAnswer, related_name='certification_sessions',null=True)\n    score = models.IntegerField(null=True,blank=True)",
         "detail": "Certification.models",
         "documentation": {}
     },
@@ -569,7 +485,7 @@
         "kind": 5,
         "importPath": "Certification.urls",
         "description": "Certification.urls",
-        "peekOfCode": "urlpatterns = [\n    path('Answerpage/',CertificationAnswerView.as_view(),name = 'Answerpage'),\n    path('answer/<int:pk>/', answer_detail, name='answer_detail'),\n    path('Login/',LoginView.as_view(),name = 'Login'),\n    path('Register/',RegisterView.as_view(),name = 'Register'),\n    path('Profile/',ProfileView.as_view(),name = 'Profile'),\n    path('Certification/',CertificationView.as_view(),name = 'Certification'),\n    path('CertificationAnswer/',CertificationAnswerView.as_view(),name = 'CertificationAnswer'),\n    path('CertificationLevel/',CertificationLevelView.as_view(),name = 'CertificationLevel'),\n    path('CertificationResult/',CertificationResultView.as_view(),name = 'CertificationResult'),",
+        "peekOfCode": "urlpatterns = [\n    path('Answerpage/',CertificationAnswerView.as_view(),name = 'Answerpage'),\n    path('answer/<int:pk>/', answer_detail, name='answer_detail'),\n    path('passed/<int:pk>/', passed_session, name='passed_session'),\n    path('Login/',LoginView.as_view(),name = 'Login'),\n    path('Register/',RegisterView.as_view(),name = 'Register'),\n    path('Logout/',LogoutView.as_view(),name = 'Logout'),\n    path('Profile/',ProfileView.as_view(),name = 'Profile'),\n    path('Certification/',CertificationView.as_view(),name = 'Certification'),\n    path('CertificationAnswer/',CertificationAnswerView.as_view(),name = 'CertificationAnswer'),",
         "detail": "Certification.urls",
         "documentation": {}
     },
@@ -587,7 +503,16 @@
         "kind": 6,
         "importPath": "Certification.views",
         "description": "Certification.views",
-        "peekOfCode": "class LoginView(TemplateView):\n    template_name = \"pages-login.html\"\n    def get(self,request):\n        return render(request,self.template_name)\n    def post(self,request):\n        email = request.POST['email']\n        password = request.POST['password']\n        user = authenticate(request,username = email,password = password)\n        print(1)\n        if user is None:",
+        "peekOfCode": "class LoginView(TemplateView):\n    template_name = \"pages-login.html\"\n    def get(self,request):\n        return render(request,self.template_name)\n    def post(self,request):\n        email = request.POST['email']\n        password = request.POST['password']\n        user = authenticate(request,username = email,password = password)\n        if user is None:\n            try:",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "LogoutView",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class LogoutView(TemplateView):\n    def get(self,request):\n        logout(request)\n        return redirect('Login')\nclass RegisterView(TemplateView):\n    template_name = \"pages-register.html\"\n    def get(self,request):\n        form = UserCreationForm()\n        return render(request,self.template_name\n                    #   ,",
         "detail": "Certification.views",
         "documentation": {}
     },
@@ -614,7 +539,7 @@
         "kind": 6,
         "importPath": "Certification.views",
         "description": "Certification.views",
-        "peekOfCode": "class CertificationView(TemplateView):\n    template_name = \"Certification.html\"\n# class CertificationAnswerView(TemplateView):\n#     template_name = \"CertificationAnswer.html\"\nclass CertificationLevelView(TemplateView):\n    template_name = \"form-fileuploads.html\"\nclass CertificationResultView(TemplateView):\n    template_name = \"CertificationResult.html\"\nclass CertificationSessionView(TemplateView):\n    template_name = \"CertificationSession.html\"",
+        "peekOfCode": "class CertificationView(TemplateView):\n    template_name = \"Certification.html\"\n# class CertificationAnswerView(TemplateView):\n#     template_name = \"CertificationAnswer.html\"\nclass CertificationLevelView(TemplateView):\n    template_name = \"form-fileuploads.html\"\nclass CertificationResultView(TemplateView):\n    template_name = \"CertificationResult.html\"\ndef get_random_tasks(level, count=10):\n    # Получаем задачи с определенным уровнем",
         "detail": "Certification.views",
         "documentation": {}
     },
@@ -623,7 +548,7 @@
         "kind": 6,
         "importPath": "Certification.views",
         "description": "Certification.views",
-        "peekOfCode": "class CertificationLevelView(TemplateView):\n    template_name = \"form-fileuploads.html\"\nclass CertificationResultView(TemplateView):\n    template_name = \"CertificationResult.html\"\nclass CertificationSessionView(TemplateView):\n    template_name = \"CertificationSession.html\"\nclass CertificationTaskView(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass CompetencyView(TemplateView):\n    template_name = \"Competency.html\"    ",
+        "peekOfCode": "class CertificationLevelView(TemplateView):\n    template_name = \"form-fileuploads.html\"\nclass CertificationResultView(TemplateView):\n    template_name = \"CertificationResult.html\"\ndef get_random_tasks(level, count=10):\n    # Получаем задачи с определенным уровнем\n    tasks_with_level = CertificationTask.objects.filter(level=level)\n    # Получаем случайные задачи из этого набора\n    random_tasks = random.sample(list(tasks_with_level), min(count, len(tasks_with_level)))\n    return random_tasks",
         "detail": "Certification.views",
         "documentation": {}
     },
@@ -632,7 +557,7 @@
         "kind": 6,
         "importPath": "Certification.views",
         "description": "Certification.views",
-        "peekOfCode": "class CertificationResultView(TemplateView):\n    template_name = \"CertificationResult.html\"\nclass CertificationSessionView(TemplateView):\n    template_name = \"CertificationSession.html\"\nclass CertificationTaskView(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass CompetencyView(TemplateView):\n    template_name = \"Competency.html\"    \nclass SubjectView(TemplateView):\n    template_name = \"Subject.html\"",
+        "peekOfCode": "class CertificationResultView(TemplateView):\n    template_name = \"CertificationResult.html\"\ndef get_random_tasks(level, count=10):\n    # Получаем задачи с определенным уровнем\n    tasks_with_level = CertificationTask.objects.filter(level=level)\n    # Получаем случайные задачи из этого набора\n    random_tasks = random.sample(list(tasks_with_level), min(count, len(tasks_with_level)))\n    return random_tasks\nclass CertificationSessionView(TemplateView):\n    template_name = \"session.html\"",
         "detail": "Certification.views",
         "documentation": {}
     },
@@ -641,7 +566,7 @@
         "kind": 6,
         "importPath": "Certification.views",
         "description": "Certification.views",
-        "peekOfCode": "class CertificationSessionView(TemplateView):\n    template_name = \"CertificationSession.html\"\nclass CertificationTaskView(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass CompetencyView(TemplateView):\n    template_name = \"Competency.html\"    \nclass SubjectView(TemplateView):\n    template_name = \"Subject.html\"",
+        "peekOfCode": "class CertificationSessionView(TemplateView):\n    template_name = \"session.html\"\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context[\"competency\"] = Competency.objects.all()\n        context[\"category\"] = Category.objects.all()\n        return context\n    def post(self, request, *args, **kwargs):\n        category = request.POST.get('category')\n        competency = request.POST.get('competency')",
         "detail": "Certification.views",
         "documentation": {}
     },
@@ -650,7 +575,7 @@
         "kind": 6,
         "importPath": "Certification.views",
         "description": "Certification.views",
-        "peekOfCode": "class CertificationTaskView(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass CompetencyView(TemplateView):\n    template_name = \"Competency.html\"    \nclass SubjectView(TemplateView):\n    template_name = \"Subject.html\"",
+        "peekOfCode": "class CertificationTaskView(TemplateView):\n    template_name = \"CertificationTask.html\"\nclass CompetencyView(TemplateView):\n    template_name = \"Competency.html\"    \nclass SubjectView(TemplateView):\n    template_name = \"Subject.html\"\nclass AddQuetions(TemplateView):\n    template_name = 'add_quetions.html'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)",
         "detail": "Certification.views",
         "documentation": {}
     },
@@ -659,7 +584,7 @@
         "kind": 6,
         "importPath": "Certification.views",
         "description": "Certification.views",
-        "peekOfCode": "class CompetencyView(TemplateView):\n    template_name = \"Competency.html\"    \nclass SubjectView(TemplateView):\n    template_name = \"Subject.html\"",
+        "peekOfCode": "class CompetencyView(TemplateView):\n    template_name = \"Competency.html\"    \nclass SubjectView(TemplateView):\n    template_name = \"Subject.html\"\nclass AddQuetions(TemplateView):\n    template_name = 'add_quetions.html'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context[\"competency\"] = Competency.objects.all()\n        context[\"level\"] = CertificationLevel.objects.all()",
         "detail": "Certification.views",
         "documentation": {}
     },
@@ -668,7 +593,16 @@
         "kind": 6,
         "importPath": "Certification.views",
         "description": "Certification.views",
-        "peekOfCode": "class SubjectView(TemplateView):\n    template_name = \"Subject.html\"",
+        "peekOfCode": "class SubjectView(TemplateView):\n    template_name = \"Subject.html\"\nclass AddQuetions(TemplateView):\n    template_name = 'add_quetions.html'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context[\"competency\"] = Competency.objects.all()\n        context[\"level\"] = CertificationLevel.objects.all()\n        context[\"category\"] = Category.objects.all()\n        return context",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "AddQuetions",
+        "kind": 6,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "class AddQuetions(TemplateView):\n    template_name = 'add_quetions.html'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context[\"competency\"] = Competency.objects.all()\n        context[\"level\"] = CertificationLevel.objects.all()\n        context[\"category\"] = Category.objects.all()\n        return context\n    def post(self,request, *args, **kwargs):\n        subject = request.POST.get('subject')",
         "detail": "Certification.views",
         "documentation": {}
     },
@@ -678,6 +612,42 @@
         "importPath": "Certification.views",
         "description": "Certification.views",
         "peekOfCode": "def answer_detail(request, pk):\n    if request.method == 'POST':\n        answer = CertificationAnswer.objects.get(pk=pk)\n        # answer.content=request.POST['answer']\n        content = request.POST.get('content')\n        files = request.FILES.get('file')\n        answer.content=content\n        answer.save()\n        print(content)\n        print(files)",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "passed_session",
+        "kind": 2,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "def passed_session(request, pk):\n    if request.method == 'POST':\n        answer = CertificationAnswer.objects.get(pk=pk)\n        # answer.content=request.POST['answer']\n        content = request.POST.get('content')\n        files = request.FILES.get('file')\n        answer.content=content\n        answer.save()\n        print(content)\n        print(files)",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_random_tasks",
+        "kind": 2,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "def get_random_tasks(level, count=10):\n    # Получаем задачи с определенным уровнем\n    tasks_with_level = CertificationTask.objects.filter(level=level)\n    # Получаем случайные задачи из этого набора\n    random_tasks = random.sample(list(tasks_with_level), min(count, len(tasks_with_level)))\n    return random_tasks\nclass CertificationSessionView(TemplateView):\n    template_name = \"session.html\"\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "certification_task_list",
+        "kind": 2,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "def certification_task_list(request):\n    tasks = CertificationTask.objects.all().values(\n        'id', 'title', 'content', \n        'competency__name', 'сategory__name', 'image', 'level__level'\n    )\n    task_list = list(tasks)  # Преобразование QuerySet в список\n    return JsonResponse(task_list, safe=False)\ndef delete_question(request, question_id):\n    try:\n            question = CertificationTask.objects.get(id=int(question_id))",
+        "detail": "Certification.views",
+        "documentation": {}
+    },
+    {
+        "label": "delete_question",
+        "kind": 2,
+        "importPath": "Certification.views",
+        "description": "Certification.views",
+        "peekOfCode": "def delete_question(request, question_id):\n    try:\n            question = CertificationTask.objects.get(id=int(question_id))\n            question.delete()\n            return JsonResponse({'status': 'success', 'message': 'Вопрос удален'})\n    except CertificationTask.DoesNotExist:\n            return JsonResponse({'status': 'error', 'message': 'Вопрос не найден'}, status=404)",
         "detail": "Certification.views",
         "documentation": {}
     },

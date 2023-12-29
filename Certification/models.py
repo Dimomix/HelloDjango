@@ -7,7 +7,7 @@ class Competency(models.Model):
     name = models.CharField(max_length=100)
     # type = models.CharField(max_length=100)
     description = models.TextField(blank=True,null=True)
-    def _str_(self):
+    def __str__(self):
         return self.name
 class CertificationLevel(models.Model):
     # Уровни сертификации, например: 5, 6, 7, 8
@@ -20,7 +20,7 @@ class Category(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True,null=True)
     level = models.ForeignKey(CertificationLevel, related_name='certification_sessions', on_delete=models.CASCADE, null = True)
-    def _str_(self):
+    def __str__(self):
         return self.name
 class Teacher(models.Model):
     # Преподаватели
@@ -58,7 +58,6 @@ class CertificationSession(models.Model):
     category=models.ForeignKey(Category, related_name='certification_sessions', on_delete=models.CASCADE, null =True)
     date = models.DateField(default=timezone.now)
     end_time=models.DateTimeField(null=True,blank=True)
-
     task=models.ManyToManyField(CertificationTask, related_name='certification_sessions',null=True)
     answer = models.ManyToManyField(CertificationAnswer, related_name='certification_sessions',null=True)
     score = models.IntegerField(null=True,blank=True)
@@ -68,3 +67,5 @@ class CertificationSession(models.Model):
 class CertificationAnswerFile(models.Model):
     answer = models.ForeignKey(CertificationAnswer, related_name='files', on_delete=models.CASCADE)
     file = models.FileField(upload_to='certification_answers')
+
+

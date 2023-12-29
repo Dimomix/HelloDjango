@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Register | Hyper - Responsive Bootstrap 5 Admin Dashboard</title>
+        <title>Регистрация | Dimomix </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -39,24 +39,24 @@
                             <div class="card-body p-4">
                                 
                                 <div class="text-center w-75 m-auto">
-                                    <h4 class="text-dark-50 text-center mt-0 fw-bold">Free Sign Up</h4>
-                                    <p class="text-muted mb-4">Don't have an account? Create your account, it takes less than a minute </p>
+                                    <h4 class="text-dark-50 text-center mt-0 fw-bold">Pегистрация</h4>
+                                    <p class="text-muted mb-4">У вас нет учетной записи? Создайте свою учетную запись, это займет меньше минуты</p>
                                 </div>
 
                                 <form action="" method="post">
                                     {% csrf_token %}
                                     <div class="mb-3">
-                                        <label for="login" class="form-label">Login</label>
+                                        <label for="login" class="form-label">Логин</label>
                                         <input class="form-control" type="text" name="login" id="login" placeholder="Enter login" required>
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="emailaddress" class="form-label">Email address</label>
+                                        <label for="emailaddress" class="form-label">Email</label>
                                         <input class="form-control" type="email" name="email" id="emailaddress" required placeholder="Enter your email">
                                     </div>
 
                                     <div class="mb-3">
-                                        <label for="password" class="form-label">Password</label>
+                                        <label for="password" class="form-label">Пароль</label>
                                         <div class="input-group input-group-merge">
                                             <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password">
                                             <div class="input-group-text" data-password="false">
@@ -76,12 +76,12 @@
                                     <div class="mb-3">
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" id="checkbox-signup">
-                                            <label class="form-check-label" for="checkbox-signup">I accept <a href="#" class="text-muted">Terms and Conditions</a></label>
+                                            <label class="form-check-label" for="checkbox-signup">Я принимаю  <a href="#" class="text-muted">Правила и условия</a></label>
                                         </div>
                                     </div>
 
                                     <div class="mb-3 text-center">
-                                        <button class="btn btn-primary" type="submit"> Sign Up </button>
+                                        <button class="btn btn-primary" type="submit"> Регистрация </button>
                                     </div>
 
                                 </form>
@@ -92,7 +92,7 @@
 
                         <div class="row mt-3">
                             <div class="col-12 text-center">
-                                <p class="text-muted">Already have account? <a href="pages-login.html" class="text-muted ms-1"><b>Log In</b></a></p>
+                                <p class="text-muted">У вас есть аккаунт? <a href="{% url 'Login'%}" class="text-muted ms-1"><b>Вход</b></a></p>
                             </div> <!-- end col-->
                         </div>
                         <!-- end row -->
@@ -106,7 +106,7 @@
         <!-- end page -->
 
         <footer class="footer footer-alt">
-            2018 - <script>document.write(new Date().getFullYear())</script> © Hyper - Coderthemes.com
+             <script>document.write(new Date().getFullYear())</script> © Dimimix - Dimimix.com
         </footer>
 
         <!-- Vendor js -->
